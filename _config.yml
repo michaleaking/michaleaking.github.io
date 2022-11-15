@@ -3,6 +3,7 @@ safe: true
 source: michaleaking.github.io/
 incremental: false
 highlighter: rouge
+theme: midnight
 gist:
   noscript: false
 kramdown:
