@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-source: michaleaking.github.io/
+source: michaleaking.github.io
 incremental: false
 highlighter: rouge
 gist:
