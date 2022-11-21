@@ -3,12 +3,36 @@ safe: true
 source: michaleaking.github.io
 incremental: false
 highlighter: rouge
+date_format: "%b %-d, %Y"
 gist:
   noscript: false
 markdown: kramdown
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 remote_theme: pages-themes/cayman@v0.2.0
-title: MKs working title
-description: Does this website have a purpose?
+title: Michalea King
+description: Polar Scientist
+# By default, the navbar creates a link for every "page" containing a `title`
+# attribute, so long as the title does not include "404". Override the
+# default links by defining a `site.header_paths` array:
+# header_paths:
+# - about.md
+# - projects.md
+
+##### SOCIAL INTEGRATION #####
+twitter_username: @Michalea_King
+github_username: michaleaking
+# linkedin_username: 
+# scholar_userid: 
+# orcid_id: 
+
+exclude:
+  - env.yml
+  - env_ruby.yml
+  - LICENSE
+  - README.md
+
 show_downloads: [true]
+
+compress_html:
+  blanklines: true
