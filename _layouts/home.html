@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<header class="header-home">
+  <div class="container">
+    <div class="row">
+      <div id="profile-pic" class="col-md-4 col-lg-3 mb-3 mb-md-0">
+        <img src="{{ site.baseurl }}/assets/css/media/images/fieldwork/fieldwork2.png">
+      </div>
+      <div class="col-md-8 col-lg-9">
+        <h1>{{site.title}}</h1>
+        <h2>{{site.description}}</h2>
+
+        <!-- Contact -->
+        <h3 class="social">
+          <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </h3>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<div class="intro border-bottom mb-3">
+  {{ content }}
+</div>
+
+<div class="border-bottom mb-3">
+<h2>Featured Posts</h2>
+<ul class="post-list">
+{%- assign counter = 0 -%}
+{%- for post in site.posts -%}
+  {%- if post.pin -%}
+    {% include post_list_item.html %}
+  {%- endif -%}
+{%- endfor -%}
+</ul>
+</div>
+
+<div>
+<h2>Latest Posts</h2>
+<ul class="post-list">
+{%- assign counter = 0 -%}
+{%- for post in site.posts -%}
+  {% include post_list_item.html %}
+  {%- assign counter = counter | plus: 1 -%}
+  {%- if counter >= page.num_posts -%}{%- break -%}{%- endif -%}
+{%- endfor -%}
+</ul>
+</div>
+</div>
