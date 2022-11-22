@@ -1,9 +1,9 @@
 ---
 title: About Me
 feature_text: |
-  A demo of Markdown and HTML includes
+  Research Scientist at APL Polar Science Center, UW.
 feature_image: "https://picsum.photos/2560/600?image=873"
-excerpt: "A demo of Markdown and HTML includes"
+excerpt: "Research Scientist at APL Polar Science Center, UW."
 aside: true
 ---
 
