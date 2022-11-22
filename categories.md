@@ -1,6 +1,6 @@
 ---
 title: Fieldwork
-layout: categories
-excerpt: "Category index"
+layout: fieldwork
+excerpt: "photos and descriptions of time in the field"
 aside: true
 ---
