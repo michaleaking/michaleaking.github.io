@@ -1,6 +1,6 @@
 ---
 title: Fieldwork
-layout: fieldwork
+layout: page
 excerpt: "photos and descriptions of time in the field"
 aside: true
 ---
