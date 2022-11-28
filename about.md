@@ -78,7 +78,7 @@ blockquote.innerHTML = bolden("Mr. Sullivan", blockquote.innerHTML)
 
 ## HTML Includes
 
-### Contact form
+### Contact Me
 
 {% include site-form.html %}
 
