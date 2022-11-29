@@ -1,8 +1,8 @@
 ---
 title: Michalea King
 feature_text: |
-  ## Michalea King |
-  # ! Site under construction! Please come back soon. | 
+  ## Michalea King 
+  ### ! Site under construction! Please come back soon. | 
   Research Scientist, APL Polar Science Center
 feature_image: "https://picsum.photos/1300/400?image=989"
 excerpt: "Enter text description for page here."
