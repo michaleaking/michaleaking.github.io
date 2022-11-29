@@ -92,7 +92,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 title: "Michalea King" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/iceberg.png" #logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "default site description" # Site description and default description, also used in jekyll-seo-tag
 url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
 baseurl: ""
@@ -108,14 +108,14 @@ css_inline: true # Will insert all styles into a single <style> block in the <he
 
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
-  16: '/assets/logos/logo@16px.png'
+  16: '/assets/logos/iceberg16px.jpg' #png'
   32: '/assets/logos/logo@32px.png'
   96: '/assets/logos/logo@96px.png'
   120: '/assets/logos/logo@120px.png'
-  144: '/assets/logos/logo@144px.png'
+  144: '/assets/logos/iceberg164px.jpg' # logo@144px.png'
   180: '/assets/logos/logo@180px.png'
   512: '/assets/logos/logo@512px.png'
-  1024: '/assets/logos/logo@1024px.png'
+  1024: '/assets/logos/iceberg.png' # logo@1024px.png'
 
 # 9. Site navigation
 navigation_header:
@@ -133,7 +133,7 @@ navigation_header:
 #  url: https://github.com/daviddarnes/alembic
 
 navigation_footer:
-- title: Created by David Darnes
+- title: site created using jekell-themes and template by David Darnes
   url: https://darn.es
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
