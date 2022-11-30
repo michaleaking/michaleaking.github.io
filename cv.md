@@ -1,5 +1,5 @@
 ---
-title: Search
+title: Curriculum Vitae
 excerpt: "Search for a page or post you're looking for"
 ---
 
