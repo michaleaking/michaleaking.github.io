@@ -1,6 +1,6 @@
 ---
 title: About
-feature_text: | Michalea King
+feature_text: Michalea King
   Research Scientist at APL Polar Science Center, UW.
 feature_image: "https://picsum.photos/2560/600?image=873"
 excerpt: "Research Scientist at APL Polar Science Center, UW."
