@@ -92,7 +92,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 title: "Michalea King" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/iceberg.png" #logo.svg" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/iceberg164px.jpg" #logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "default site description" # Site description and default description, also used in jekyll-seo-tag
 url: "https://michaleaking.github.io" # "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
 baseurl: ""
