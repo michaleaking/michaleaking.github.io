@@ -129,6 +129,8 @@ navigation_header:
   url: /fieldwork/
 - title: CV
   url: /cv/
+- title: Cat
+  url: /categories/
 #- title: Fork Alembic
 #  url: https://github.com/daviddarnes/alembic
 
