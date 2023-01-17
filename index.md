@@ -5,6 +5,7 @@ feature_text: |
   ### ! Site under construction! Please come back soon. 
   Research Scientist, APL Polar Science Center
 feature_image: "https://picsum.photos/1300/400?image=989"
+aside: true
 excerpt: "Enter text description for page here."
 ---
 
