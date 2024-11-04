@@ -59,7 +59,7 @@ plugins:
   - jekyll-include-cache
 
 header:
-  teaser: /assets/images/alaska_mk.jpg
+  image: /assets/images/alaska_mk.jpg
 
 author:
   name   : "Michalea King, Research Scientist"
