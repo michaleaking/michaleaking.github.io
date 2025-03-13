@@ -2,7 +2,7 @@ main:
   - title: "Posts"
     url: /posts/
   - title: "Research"
-    url: /research/
+    url: /_pages/research.md
   - title: "In the Field"
     url: /field/
   - title: "People"
