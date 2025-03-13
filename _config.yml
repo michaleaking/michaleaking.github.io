@@ -61,6 +61,9 @@ plugins:
 
 header:
   image: /assets/images/alaska_mk.jpg
+# fallback teaser image used in the “Related Posts” module
+teaser: /assets/images/alaska_mk.jpg
+
 
 author:
   name   : "Michalea King, Research Scientist"
