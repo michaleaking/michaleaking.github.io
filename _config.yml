@@ -64,6 +64,8 @@ header:
 # fallback teaser image used in the “Related Posts” module
 teaser: /assets/images/alaska_mk.jpg
 
+#logo before site title
+logo: /assets/images/stylized_logo.png
 
 author:
   name   : "Michalea King, Research Scientist"
