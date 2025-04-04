@@ -1,8 +1,8 @@
 main:
   - title: "Posts"
-    url: /posts/
+    url: /posts_new/
   - title: "Research"
-    url: /pages/ #research.md
+    url: /research_archive/ #research.md
   - title: "In the Field"
     url: /field/
   - title: "People"
