@@ -23,7 +23,7 @@ description: Glaciologist, Polar Science Center, UW
 # twitter_username: Michalea_King
 url: "https://michaleaking.github.io"
 baseurl: ""
-repository: "/michaleaking//michaleaking.github.io"
+repository: "/michaleaking/michaleaking.github.io"
 github_username: michaleaking
 minimal_mistakes_skin: "dark" #"default" # "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: true
