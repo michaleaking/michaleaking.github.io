@@ -3,8 +3,8 @@ main:
     url: /
   - title: "About"
     url: /about/
-  - title: "Posts"
-    url: /posts_new/
+ # - title: "Posts"
+ #   url: /posts_new/
   - title: "Research"
     url: /research_archive/ #research.md
   - title: "In the Field"
