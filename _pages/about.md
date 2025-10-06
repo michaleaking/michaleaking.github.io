@@ -1,8 +1,18 @@
 ---
-permalink: /about/
 title: "About"
+permalink: /about/
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+I am a researcher focused on understanding the dynamics of ice sheets and glaciers and their role in global climate systems.  
+My work integrates satellite imagery, field data, and ice sheet models to understand patterns of evolcing glacial dynamics and projections of future polar change.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+### 🧊 Research Interests
+- Glacier dynamics and ice sheet mass balance
+- Remote sensing and satellite analysis 
+- Ice–ocean interactions and mechanisms of short-term to decadal ice flow 
+- Integration of observations with ice sheet  
+
+### 🏫 Academic Background
+- **Ph.D. in Earth Sciecnes**, [Your University], 2020  
+- **M.Sc. in Geography**, [Your University], 2016  
+- **B.Sc. in Geography (Climate Science specialization)**, [Your University], 2014
