@@ -4,24 +4,16 @@ permalink: /teaching/
 title: Teaching &amp; mentoring
 eyebrow: 
 lede: >-
-  Teaching that puts students on the ice, where glaciology, geoscience, and
-  place-based learning meet.
+  Page in progress. Please check back soon for final links to student study abroad course content.
 ---
 
 ## Greenland field course
 
 I co-lead an undergraduate field course based in Greenland that sits at the
 intersection of geoscience, glaciology, and place-based learning. The course
-is built around partnerships — with field teams, with artists, and with
-Indigenous communities — and with colleagues at the University of Alaska
-Fairbanks and the International Arctic Research Center.
+is built around science and community partnerships, and explores Arctic change from  
+both an environmental and societal lens. 
 
-## Mentoring
-
-I advise and mentor graduate students, postdoctoral researchers, and technical
-staff working across satellite remote sensing, ice-sheet modelling, and field
-data collection. If you're a prospective student interested in outlet-glacier
-dynamics or reproducible geospatial tooling, get in touch.
 
 <p class="cta-inline">
   <a class="btn" href="mailto:{{ site.email }}">Email me</a>
