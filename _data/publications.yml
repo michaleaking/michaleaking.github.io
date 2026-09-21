@@ -1,0 +1,175 @@
+# ------------------------------------------------------------
+# PUBLICATIONS
+# The two entries below are TEMPLATES — replace them with your
+# real papers. Nothing here is a real citation.
+#
+# Fields:
+#   authors  – put your name in **bold** using <strong>King, M.</strong>
+#   year, title, venue – as they should display
+#   doi      – full URL, or leave blank
+#   featured – true shows it in the "Selected" list on the home page
+# ------------------------------------------------------------
+
+# Publications — newest first (file order controls display order).
+# `featured: true` surfaces a paper in the "Selected" list on the home page.
+# Your name is wrapped in <strong> so it renders bold in the author list.
+ 
+- authors: "Otosaka, I., and IMBIE Team including <strong>King, M. D.</strong>"
+  year: 2026
+  title: "Mass balance of the Greenland and Antarctic ice sheets from the 1970s to 2023."
+  venue: "Sci Data, 13, 1301."
+  doi: https://doi.org/10.1038/s41597-026-08088-0
+  featured: true
+ 
+- authors: "Wood, M., Summers, P., Bertin, C., Carroll, D., Fenty, I., <strong>King, M. D.</strong>, Willis, J."
+  year: 2026
+  title: "Nonlinear interactions between subglacial discharge and iceberg melt enhance biological productivity around Upernavik, a major West Greenland fjord system."
+  venue: "In review for JGR Oceans."
+  doi:
+  featured: false
+ 
+- authors: "Abib, N., Sutherland, D., Amundson, J., <strong>King, M. D.</strong>, and Joughin, I."
+  year: 2026
+  title: "Environmental controls on ice mélange breakup at deeply grounded glaciers."
+  venue: "In review (revision) for Journal of Glaciology."
+  doi:
+  featured: false
+ 
+- authors: "Summers, P., Robel, A., Jackson, R., <strong>King, M. D.</strong>, Amundson, J., Burton, J."
+  year: 2026
+  title: "Sudden collapse of ice mélange under increasing submarine melt at tidewater glaciers."
+  venue: "Accepted, Nature Communications."
+  doi:
+  featured: true
+ 
+- authors: "Smith, B. E., and NASA ICESat-2 Land Ice Science Team, including <strong>King, M. D.</strong>"
+  year: 2026
+  title: "ICESat-2 land ice products resolve Greenland and Antarctic ice sheet height changes on seasonal to multiyear time scales."
+  venue: "Journal of Glaciology, 72, e63."
+  doi: https://doi.org/10.1017/jog.2026.10152
+  featured: true
+ 
+- authors: "Chudley, T., Howat, I., <strong>King, M. D.</strong>, MacKie, E."
+  year: 2025
+  title: "Increased crevassing across accelerating Greenland Ice Sheet margins."
+  venue: "Nat. Geosci., 18, 148–153."
+  doi: https://doi.org/10.1038/s41561-024-01636-6
+  featured: true
+ 
+- authors: "Kochtitzky, W., Copland, L., <strong>King, M. D.</strong>, Hugonnet, R., Jiskoot, H., Morlighem, M., Millan, R., Khan, S. A., Noël, B."
+  year: 2023
+  title: "Closing Greenland's mass balance: Frontal ablation for every Greenlandic glacier from 2000 to 2020."
+  venue: "Geophysical Research Letters, 50, e2023GL104095."
+  doi: https://doi.org/10.1029/2023GL104095
+  featured: false
+ 
+- authors: "Abbott, B., and 9 others including <strong>King, M. D.</strong>"
+  year: 2023
+  title: "Accelerating the renewable energy revolution to get back to the Holocene."
+  venue: "Earth's Future, 11, e2023EF003639."
+  doi: https://doi.org/10.1029/2023EF003639
+  featured: false
+ 
+- authors: "Chudley, T., Howat, I., <strong>King, M. D.</strong>, Negrete, A."
+  year: 2023
+  title: "Atlantic Water intrusion triggers rapid retreat and regime change at previously stable Greenland glacier."
+  venue: "Nat. Commun., 14, 2151, 1–10."
+  doi: https://doi.org/10.1038/s41467-023-37764-7
+  featured: false
+ 
+- authors: "Kochtitzky, W., et al. including <strong>King, M. D.</strong>"
+  year: 2023
+  title: "Progress towards globally complete frontal ablation estimates of marine-terminating glaciers."
+  venue: "Annals of Glaciology, 1–10."
+  doi: https://doi.org/10.1017/aog.2023.35
+  featured: false
+ 
+- authors: "IMBIE Team including <strong>King, M. D.</strong>"
+  year: 2022
+  title: "Mass Balance of the Greenland and Antarctic Ice Sheets from 1992 to 2020."
+  venue: "Earth Syst. Sci. Data, 15, 1597–1616."
+  doi: https://doi.org/10.5194/essd-15-1597-2023
+  featured: false
+ 
+- authors: "Khan, S. A., Bamber, J., Rignot, E., Helm, V., Aschwanden, A., Holland, D., van den Broeke, M., <strong>King, M. D.</strong>, Noël, B., Truffer, M., Humbert, A., Vijay, S., Munneke, P. K."
+  year: 2022
+  title: "Greenland mass trends from airborne and satellite altimetry during 2011–2020."
+  venue: "JGR Earth Surface, 127, e2021JF006505."
+  doi: https://doi.org/10.1029/2021JF006505
+  featured: false
+ 
+- authors: "<strong>King, M. D.</strong>"
+  year: 2021
+  title: "Post-publication careers: lockdown to limelight."
+  venue: "Commun. Earth Environ., 2, 180."
+  doi: https://doi.org/10.1038/s43247-021-00236-1
+  featured: false
+ 
+- authors: "Mankoff, K., and 15 others including <strong>King, M. D.</strong>"
+  year: 2021
+  title: "Greenland ice sheet mass balance from 1840 through next week."
+  venue: "Earth Syst. Sci. Data, 13, 5001–5025."
+  doi: https://doi.org/10.5194/essd-13-5001-2021
+  featured: false
+ 
+- authors: "Vijay, S., <strong>King, M. D.</strong>, Howat, I. M., Solgaard, A., Khan, S. A., Noël, B."
+  year: 2021
+  title: "Greenland ice-sheet wide classification of glaciers based on two distinct seasonal ice velocity behaviors."
+  venue: "Journal of Glaciology, 1–8."
+  doi: https://doi.org/10.1017/jog.2021.89
+  featured: false
+ 
+- authors: "<strong>King, M. D.</strong>, Howat, I. M., Candela, S. G., Jeong, S., Noh, M. J., Noël, B., van den Broeke, M. R., Wouters, B., and Negrete, A."
+  year: 2020
+  title: "Dynamic ice loss from the Greenland Ice Sheet driven by sustained glacier retreat."
+  venue: "Nature Communications Earth & Environment, 1, 1."
+  doi: https://doi.org/10.1038/s43247-020-0001-2
+  featured: true
+ 
+- authors: "Sasgen, I., Wouters, B., Gardner, A., <strong>King, M. D.</strong>, Tedesco, M., Dahle, C., Landerer, F., Save, H., and Fettweis, X."
+  year: 2020
+  title: "Return to rapid ice loss in Greenland and record loss in 2019 detected by the GRACE-FO satellites."
+  venue: "Nature Communications Earth & Environment, 1, 8."
+  doi: https://doi.org/10.1038/s43247-020-0010-1
+  featured: false
+ 
+- authors: "<strong>King, M. D.</strong>, Veron, D. E., and Huntley, H. S."
+  year: 2020
+  title: "Early predictors of seasonal Arctic sea ice volume loss: The impact of spring and early-summer cloud radiative conditions."
+  venue: "Annals of Glaciology, 1–9."
+  doi: https://doi.org/10.1017/aog.2020.60
+  featured: false
+ 
+- authors: "Fettweis, X., and 40 others including <strong>King, M. D.</strong>"
+  year: 2020
+  title: "GrSMBMIP: Intercomparison of the modelled 1980–2012 surface mass balance over the Greenland Ice Sheet."
+  venue: "The Cryosphere."
+  doi: https://doi.org/10.5194/tc-14-3935-2020
+  featured: false
+ 
+- authors: "Riihelä, A., <strong>King, M. D.</strong>, Antilla, K."
+  year: 2019
+  title: "The surface albedo of the Greenland Ice Sheet between 1982 and 2015 from the CLARA-A2 dataset, and its relationship to the ice sheet's surface mass balance."
+  venue: "The Cryosphere, 13, 2597–2614."
+  doi: https://doi.org/10.5194/tc-13-2597-2019
+  featured: false
+ 
+- authors: "<strong>King, M. D.</strong>, Howat, I. M., Jeong, S., Noh, M. J., Wouters, B., Noël, B., and van den Broeke, M. R."
+  year: 2018
+  title: "Seasonal to decadal variability in ice discharge from the Greenland Ice Sheet."
+  venue: "The Cryosphere, 12, 3813–3825."
+  doi: https://doi.org/10.5194/tc-12-3813-2018
+  featured: false
+ 
+- authors: "Bamber, J. L., Tedstone, A. J., <strong>King, M. D.</strong>, Howat, I., Van den Broeke, M."
+  year: 2018
+  title: "Land ice freshwater budget of the Arctic and North Atlantic Oceans. Part I: Data, methods and results."
+  venue: "Journal of Geophysical Research Oceans, 123, 1827–1837."
+  doi: https://doi.org/10.1002/2017JC013605
+  featured: false
+
+# ---- TIP -----------------------------------------------------
+# If you keep your library in Zotero, you can export a group as
+# BibTeX and convert entries to this YAML format, then automate
+# the refresh with a scheduled GitHub Action. Ask and I'll set
+# that pipeline up.

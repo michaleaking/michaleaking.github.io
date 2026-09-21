@@ -1,0 +1,54 @@
+---
+layout: page
+permalink: /group/
+title: Team &amp; collaborators
+eyebrow: Team members and collaborators
+lede: >-
+  My work is highly collaborative, spanning remote sensing,
+  modeling, and fieldwork across disciplines, career stages, and institutions.
+---
+
+<div class="grid grid-3 people">
+  {%- for person in site.data.people.group -%}
+  <article class="card person">
+    <div class="person-head">
+      <div class="avatar" role="img" aria-label="{{ person.name }}">
+        {%- if person.photo and person.photo != '' -%}
+          <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}">
+        {%- else -%}
+          <svg viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><circle cx="32" cy="24" r="13"/><path d="M8 60c0-13 11-20 24-20s24 7 24 20z"/></svg>
+        {%- endif -%}
+      </div>
+      <div class="person-id">
+        <h3>{{ person.name }}</h3>
+        <p class="person-role">{{ person.role }}</p>
+      </div>
+    </div>
+    {%- if person.focus -%}<p>{{ person.focus }}</p>{%- endif -%}
+    {%- if person.projects and person.projects.size > 0 -%}
+    <ul class="tags person-projects">
+      {%- for slug in person.projects -%}
+        {%- assign project = site.data.projects | where: 'slug', slug | first -%}
+        {%- if project -%}
+        <li><a href="{{ '/research/' | relative_url }}#{{ project.slug }}">{{ project.title }}</a></li>
+        {%- else -%}
+        <li>{{ slug }}</li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
+    {%- if person.link and person.link != '' -%}
+    <a class="more" href="{{ person.link }}">Website →</a>
+    {%- endif -%}
+  </article>
+  {%- endfor -%}
+</div>
+
+<div class="note">
+  <h2>Team members &amp; Collaborators</h2>
+  <p>
+    Active collaborations include field and remote-sensing work with
+    Greenland-based partners, colleagues at the University of Washington and international teams. 
+
+  </p>
+</div>

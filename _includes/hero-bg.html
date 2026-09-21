@@ -1,0 +1,15 @@
+{%- comment -%}
+  Hero backdrop. Set `hero.image` in _config.yml to use a photo; leave it
+  blank to fall back to the drawn flowlines. The three tuning knobs
+  (opacity, position, scrim) are passed to the stylesheet as custom
+  properties so they can be changed in _config.yml without touching CSS.
+{%- endcomment -%}
+{%- if site.hero.image and site.hero.image != '' -%}
+<div class="hero-bg" aria-hidden="true"
+     style="--hero-image:url('{{ site.hero.image | relative_url }}');
+            --hero-opacity:{{ site.hero.opacity | default: 0.45 }};
+            --hero-position:{{ site.hero.position | default: 'center' }};
+            --hero-scrim:{{ site.hero.scrim | default: 0.75 }};"></div>
+{%- else -%}
+{%- include flowlines.html -%}
+{%- endif -%}

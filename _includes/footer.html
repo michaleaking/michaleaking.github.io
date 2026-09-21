@@ -1,0 +1,28 @@
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-links">
+      {%- if site.email and site.email != '' -%}
+        <a href="mailto:{{ site.email }}">Email</a>
+      {%- endif -%}
+      {%- if site.social.github and site.social.github != '' -%}
+        <a href="https://github.com/{{ site.social.github }}">GitHub</a>
+      {%- endif -%}
+      {%- if site.social.orcid and site.social.orcid != '' -%}
+        <a href="https://orcid.org/{{ site.social.orcid }}">ORCID</a>
+      {%- endif -%}
+      {%- if site.social.scholar and site.social.scholar != '' -%}
+        <a href="https://scholar.google.com/citations?user={{ site.social.scholar }}">Scholar</a>
+      {%- endif -%}
+      {%- if site.social.bluesky and site.social.bluesky != '' -%}
+        <a href="https://bsky.app/profile/{{ site.social.bluesky }}">Bluesky</a>
+      {%- endif -%}
+      {%- if site.social.linkedin and site.social.linkedin != '' -%}
+        <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a>
+      {%- endif -%}
+    </div>
+    <p class="foot-meta">
+      © {{ 'now' | date: "%Y" }} {{ site.author.name }} · {{ site.author.location }}
+    </p>
+  </div>
+</footer>
+<script src="{{ '/assets/js/nav.js' | relative_url }}"></script>

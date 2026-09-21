@@ -1,0 +1,82 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  {% include hero-bg.html %}
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Glaciology · Remote sensing · Greenland · Antarctica</p>
+      <h1 class="hero-title">Observing and understanding polar ice sheet change.</h1>
+      <p class="hero-lede">
+        I'm {{ site.author.name }}, a glaciologist studying how large outlet glaciers flow, calve, and
+        drain, using satellite remote sensing and field observations to measure change 
+        from the dynamic margins to the deeper interior of the ice sheets.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="{{ '/research/' | relative_url }}">Research</a>
+        <a class="btn btn-ghost" href="{{ '/publications/' | relative_url }}">Publications</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="headshot" role="img" aria-label="{{ site.author.name }}">
+        {%- if site.author.photo and site.author.photo != '' -%}
+          <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}">
+        {%- else -%}
+          <svg viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><circle cx="32" cy="24" r="13"/><path d="M8 60c0-13 11-20 24-20s24 7 24 20z"/></svg>
+          <span class="headshot-label">Your headshot</span>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="band-head">
+      <h2>Research Projects</h2>
+      <a class="more" href="{{ '/research/' | relative_url }}">More Research and links →</a>
+    </div>
+    <div class="grid grid-3">
+      {%- for p in site.data.projects -%}
+        {%- if p.featured -%}
+        <article class="card">
+          <h3>{{ p.title }}</h3>
+          <p>{{ p.summary }}</p>
+          {%- if p.tags -%}
+          <ul class="tags">
+            {%- for t in p.tags -%}<li>{{ t }}</li>{%- endfor -%}
+          </ul>
+          {%- endif -%}
+        </article>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="band band-alt">
+  <div class="wrap">
+    <div class="band-head">
+      <h2>Select Recent publications</h2>
+      <a class="more" href="{{ '/publications/' | relative_url }}">See more →</a>
+    </div>
+    <ol class="pubs">
+      {%- for pub in site.data.publications -%}
+        {%- if pub.featured -%}
+        <li class="pub">
+          <span class="pub-year mono">{{ pub.year }}</span>
+          <div>
+            <p class="pub-title">{{ pub.title }}</p>
+            <p class="pub-meta">{{ pub.authors }} · <em>{{ pub.venue }}</em></p>
+            {%- if pub.doi and pub.doi != '' -%}
+            <a class="more" href="{{ pub.doi }}">DOI →</a>
+            {%- endif -%}
+          </div>
+        </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ol>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+---
+layout: page
+permalink: /publications/
+title: Publications
+eyebrow: Peer-reviewed work
+lede: 
+---
+
+<ol class="pubs full">
+  {%- for pub in site.data.publications -%}
+  <li class="pub">
+    <span class="pub-year mono">{{ pub.year }}</span>
+    <div>
+      <p class="pub-title">{{ pub.title }}</p>
+      <p class="pub-meta">{{ pub.authors }} · <em>{{ pub.venue }}</em></p>
+      {%- if pub.doi and pub.doi != '' -%}
+      <a class="more" href="{{ pub.doi }}">DOI →</a>
+      {%- endif -%}
+    </div>
+  </li>
+  {%- endfor -%}
+</ol>

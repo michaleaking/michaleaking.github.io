@@ -1,0 +1,72 @@
+# ============================================================
+#  SITE CONFIG  —  edit this file first
+#  Almost everything you'll want to change lives here.
+#  After editing, restart the local server to see changes.
+# ============================================================
+
+# --- Identity -------------------------------------------------
+title: Michalea King
+tagline: Glaciology & Remote Sensing
+description: >-
+  I study how large outlet glaciers flow, calve, and
+  drain, using satellite remote sensing and field observations to measure change 
+  from the dynamic margins to the deeper interior of the ice sheets.
+
+author:
+  name: Michalea King
+  role: Senior Research Scientist
+  field: Glaciology
+  institution: University of Washington, APL Polar Science Center
+  location: Seattle, Washington
+  photo: /assets/img/headshot_2026.jpg                           # e.g. /assets/img/headshot.jpg (leave blank for a placeholder)
+
+# --- Home page hero ------------------------------------------
+# Set `image` to a photo in assets/img/ to use it as the hero backdrop.
+# Leave it blank to go back to the drawn flowlines. Wide, landscape
+# photos work best; the image is cropped to fill.
+#
+#   opacity  0–1   how strongly the photo shows through the dark hero
+#                  gradient. Lower = more muted, easier to read over.
+#   scrim    0–1   strength of the dark wash over the photo, heaviest on
+#                  the left where the headline sits. Raise it if the text
+#                  looks washed out; lower it to show more of the photo.
+#   position       which part of the photo stays in frame when cropped,
+#                  e.g. center, "center 30%", "left center".
+hero:
+  image: /assets/img/sunset_iceberg.jpg
+  opacity: 0.35
+  scrim: 0.72
+  position: center
+
+# --- Links (leave any line blank to hide that link) ----------
+email: michalea@uw.edu
+social:
+  github: michaleaking
+  orcid: 0000-0002-8138-4362        # your 16-digit ORCID
+  scholar:  1PYqI-4AAAAJ                        # Google Scholar user ID (from the profile URL)
+  #bluesky:                          # e.g. yourname.bsky.social
+  #linkedin:                         # e.g. your-handle
+
+# --- Site address --------------------------------------------
+# USER SITE (repo named <username>.github.io):
+#   url = https://<username>.github.io   and   baseurl = ""   (leave empty)
+# PROJECT SITE (repo named something else):
+#   url = https://<username>.github.io   and   baseurl = "/<repo-name>"
+url: "https://michaleaking.github.io"
+baseurl: ""
+
+# --- Build (you rarely need to touch below here) -------------
+markdown: kramdown
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag     # <title>, description, Open Graph tags
+  - jekyll-sitemap     # sitemap.xml for search engines
+  - jekyll-feed        # /feed.xml for news/updates
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

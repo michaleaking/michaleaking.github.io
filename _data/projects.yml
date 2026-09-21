@@ -1,0 +1,71 @@
+# Research threads. Set `featured: true` to show a thread on the home page.
+# `tags` render as small labels. `data` lists the datasets each thread leans on.
+
+- title: Mapping Greenland interior ice flow with NISAR
+  slug: greenland-nisar
+  featured: true
+  summary: >-
+    How calving at marine-terminating outlet glaciers drives transitions in
+    subglacial hydrology. This thread pairs satellite remote sensing with
+    ice-sheet modelling, including science questions enabled by NISAR (the
+    NASA-ISRO Synthetic Aperture Radar mission). This research is 
+    supported by NASA Cryosphere.
+  tags: [NASA,Remote sensing, Ice-sheet modelling, ISSM]
+  data: [GrIMP, BedMachine, ICESat-2, NISAR]
+
+- title: Antarctic Mass Balance
+  slug: antarctica-discharge
+  featured: true
+  summary: >-
+    How calving at marine-terminating outlet glaciers drives transitions in
+    subglacial hydrology. This thread pairs satellite remote sensing with
+    ice-sheet modelling, including science questions enabled by NISAR (the
+    NASA-ISRO Synthetic Aperture Radar mission). This research is 
+    supported by NASA Cryosphere.
+  tags: [NASA, Remote sensing, Ice-sheet modelling, ISSM]
+  data: [GrIMP, BedMachine, ICESat-2]
+
+- title: Modeling subglacial hydrology and seasonal velocity in Greenland
+  slug: green-ibis
+  featured: true
+  summary: >-
+    How calving at marine-terminating outlet glaciers drives transitions in
+    subglacial hydrology. This thread pairs satellite remote sensing with
+    ice-sheet modelling, including science questions enabled by NISAR (the
+    NASA-ISRO Synthetic Aperture Radar mission). This research is 
+    supported by NASA Cryosphere and led by PI Jessica Badgeley, APL Polar 
+    Science Center.
+  tags: [NASA, Remote sensing, Ice-sheet modelling, ISSM]
+  data: [GrIMP, BedMachine]
+
+- title: Mapping mélange in Greenland fjords
+  slug: melange-fjord
+  featured: true
+  summary: >-
+     This works adapts glacier velocity mapping techniques to better understand the 
+     spatiotemporal variability of ice mélange, the dense mix of icebergs and sea ice packed 
+     into glacial fjords, and how it couples to terminus stability and calving at the ice-ocean 
+     boundary. This research is supported by NSF Arctic Natural Sciences.
+  tags: [Fjord processes, Calving]
+  data: [GrIMP, ArcticDEM]
+
+- title: Seasonal glacier dynamics using ICESat-2
+  slug: icesat2-seasonal
+  featured: true
+  summary: >-
+    Seasonal patterns in glacier terminus position and the hydraulic-potential
+    fields that route water beneath the ice, built into reproducible tools for
+    tracing meltwater pathways from bed and surface topography. This research is 
+    supported by NASA A.32: Studies with ICESat-2.
+  tags: [Seasonality, Meltwater routing]
+  data: [BedMachine, ArcticDEM, RACMO]
+
+- title: Paatuut — landslides and permafrost
+  slug: paatuut
+  featured: false
+  summary: >-
+    A field-site collaboration at Paatuut, West Greenland, analysing landslide
+    and permafrost dynamics with pyTopoComplexity and Landlab, in partnership
+    with Greenland-based and University of Washington colleagues.
+  tags: [Permafrost, Geomorphology, Field]
+  data: [ArcticDEM]

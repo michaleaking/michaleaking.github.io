@@ -1,0 +1,38 @@
+# Field photos for the Photos page.
+# Add an image file to assets/img/ and set `image` to its path. Leave `image`
+# blank to show a placeholder tile. Each photo keeps its natural proportions
+# in the masonry layout; the caption appears on hover.
+#
+# - image: /assets/img/calving-front.jpg
+#   caption: Calving front at Sermeq Kujalleq, July 2024.
+
+- image: /assets/img/sermeq_calving_1.jpg
+  caption: Calving front at Sermeq Kujalleq - one of the largest outlet glaciers in Greenland.
+- image: /assets/img/nisar_2026_calval_mk.jpg
+  caption: Servicing a GPS station near Ilulissat for NISAr satellite validation.
+- image:  /assets/img/Michalea_fieldPhoto1.png
+  caption: Ilulissat icefjord, 2019.
+- image: /assets/img/meltwater_2026.JPG
+  caption: Meltwater channel carved into the ice sheet surface, Greenland.
+- image: /assets/img/Russell_Glacier.jpg
+  caption: Field team looks on at the ice face of land-terminating Russell Glacier.
+- image: /assets/img/Antarctic_flow.jpg
+  caption: Flyover of Antarctic glacier en route to South Pole.
+- image: /assets/img/southPole_mk.jpg
+  caption: Geographic South Pole, 2020.
+- image: /assets/img/sunset_iceberg.jpg
+  caption: Grounded icebergs in Ilulissat icefjord washed in evening pastel.
+- image: /assets/img/sermeq_kujalleq.png
+  caption: Fast-flowing trunk of Sermeq Kujalleq as seen from a Twin Otter craft.
+- image: /assets/img/iceshelf_2020.jpg
+  caption:  LC-130's resting on ice shelf near McMurdo Station, Antarctica.
+- image: /assets/img/glacier_flow_people2.jpg
+  caption:  Polar Science Center investigators Michalea and Daniel Shapero demonstrate ice flow at Polar Science Day, Seattle. 
+- image: /assets/img/glacier_grooves_kelleys.jpeg 
+  caption:  Students explore extensive glacial grooves from the Last Glacial Maximum on Kelley's Island, Lake Erie. 2019.
+- image: /assets/img/ice_divide.jpg
+  caption:  Camp at the Ice Divide during a Juneau Icefield Research Program Traverse (2019).
+- image: /assets/img/MK_iceland.jpeg
+  caption:  Near entrance to glacial cave in south Iceland.
+- image: /assets/img/IMG_2425_Original.jpg
+  caption:  Michalea and study abroad Program Lead Michelle Koutnik pose with students along the Ilulissat icefjord in Greenland, 2023.

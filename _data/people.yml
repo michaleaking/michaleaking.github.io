@@ -1,0 +1,78 @@
+# ------------------------------------------------------------
+# GROUP & COLLABORATORS
+# Listing people publicly is your call — please confirm names
+# with each person before publishing. The group entries below
+# are drafts for you to review, edit, or delete.
+#
+# Fields:
+#   name     – displayed name
+#   role     – short role line (rendered in mono type)
+#   focus    – one-sentence research focus (optional)
+#   link     – external profile URL (optional; blank hides the link)
+#   photo    – headshot path, e.g. /assets/img/headshot_2026.jpg
+#              Add the file to assets/img/ first. Square-ish crops look
+#              best; leave blank to show a neutral placeholder avatar.
+#   projects – list of project `slug` values from _data/projects.yml.
+#              Each renders as a tag linking to that thread on the
+#              Research page. A slug with no match renders as plain text,
+#              so you can also list work that isn't a project entry.
+# ------------------------------------------------------------
+
+group:
+  - name: Michalea King
+    role: Principal Investigator; Affiliate Faculty, UW Earth and Space Sciences
+    focus: Outlet-glacier dynamics, remote sensing, subglacial hydrology
+    link:
+    photo: /assets/img/headshot_2026.jpg
+    projects: [greenland-nisar, antarctica-discharge, green-ibis, melange-fjord, icesat2-seasonal]
+
+  # DRAFT — confirm before publishing:
+  - name: Claire Jensen
+    role: Doctoral student in UW Earth and Space Sciences
+    focus: ML-methods for understanding seasonality of the Northeast Greenland Ice Stream (NEGIS)
+    link: https://clairecjensen.com
+    photo:
+    projects: [greenland-nisar]
+
+  - name: Ian Joughin
+    role: PI, Senior Principal Engineer, APL Polar Science Center
+    focus: SAR, remote-sensing, NISAR DART Science Lead.
+    link: https://nsidc.org/grimp
+    photo: /assets/img/team/joughin_ian_bio.jpg
+    projects: [greenland-nisar,icesat2-seasonal, melange-fjord, antarctica-discharge]
+
+  - name: Jessica Badgeley
+    role: PI, Senior Research Scientist, APL Polar Science Center
+    focus: Ice sheet modeling (ISSM), subglacial hydrology.
+    link: https://github.com/jabadge
+    photo: /assets/img/team/jessica_badgeley.jpeg
+    projects: [green-ibis]
+
+  - name: Ben Smith
+    role: PI, Senior Principal Physicist, APL Polar Science Center
+    focus: Laser altimetry, ICESat-2 land ice products, community tool building.
+    link: https://github.com/SmithB
+    photo: /assets/img/team/Ben_smith.png
+    projects: [icesat2-seasonal,antarctica-discharge]
+
+  - name: Tyler Sutterley
+    role: PI, Senior Research Scientist, APL Polar Science Center
+    focus: ICESat-2 land ice products, gravimetry, community tool building.
+    link: https://tsutterley.github.io/
+    photo: /assets/img/team/tyler_sutterley.jpeg
+    projects: [antarctica-discharge]
+
+  # Add more members by copying the block above.
+  # - name:
+  #   role:
+  #   focus:
+  #   link:
+  #   photo:
+  #   projects: []
+
+# Named external collaborators are kept out by default. If you'd
+# like to list any, add them here after checking with them:
+# collaborators:
+#   - name:
+#     affiliation:
+#     link:

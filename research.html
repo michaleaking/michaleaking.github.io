@@ -1,0 +1,32 @@
+---
+layout: page
+permalink: /research/
+title: Research
+eyebrow: Areas of focus
+lede: >-
+  My group works at the boundary between the Greenland Ice Sheet and the ocean,
+  where outlet glaciers accelerate, calve, and route meltwater to the sea.
+  We combine satellite remote sensing with ice-sheet modelling and repeat
+  field observations at remote high-latitude sites.
+---
+
+<div class="stack">
+  {%- for p in site.data.projects -%}
+  <article class="thread" id="{{ p.slug }}">
+    <h2>{{ p.title }}</h2>
+    <p>{{ p.summary }}</p>
+    <div class="thread-meta">
+      {%- if p.tags -%}
+      <ul class="tags">
+        {%- for t in p.tags -%}<li>{{ t }}</li>{%- endfor -%}
+      </ul>
+      {%- endif -%}
+      {%- if p.data -%}
+      <ul class="datachips small">
+        {%- for d in p.data -%}<li>{{ d }}</li>{%- endfor -%}
+      </ul>
+      {%- endif -%}
+    </div>
+  </article>
+  {%- endfor -%}
+</div>

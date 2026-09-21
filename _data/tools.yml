@@ -1,0 +1,33 @@
+# Open-source tools. Set `featured: true` to show a tool on the home page.
+# `repo` is the GitHub URL; leave blank if a tool isn't public yet.
+
+- name: netcdf2geotiff
+  featured: true
+  lang: Python
+  repo: https://github.com/your-github-username/netcdf2geotiff
+  summary: >-
+    Command-line tool that converts NetCDF fields to GeoTIFF while preserving
+    the polar stereographic coordinate reference system (EPSG:3413), so outputs
+    drop straight into GIS and cloud-optimised workflows.
+
+- name: fluxgate-tools
+  featured: true
+  lang: Python
+  repo: https://github.com/your-github-username/fluxgate-tools
+  summary: >-
+    Interactive drawing of flux gates across glacier trunks for ice-discharge
+    estimates, packaged as an installable src-layout module.
+
+- name: terminus-seasonality
+  featured: false
+  lang: Python / MATLAB
+  repo: https://github.com/your-github-username/terminus-seasonality
+  summary: >-
+    Routines for measuring seasonal terminus change and deriving
+    hydraulic-potential and subglacial-hydrology fields, with visualisation
+    helpers for polar datasets.
+
+# Practices these tools are built on (rendered as a note on the Tools page):
+# reproducible src-layout packaging, pre-commit hooks, conda-lock environments,
+# GitHub Actions CI with micromamba, and cloud-optimised GeoTIFF lazy reads
+# (rioxarray + dask over /vsicurl/).

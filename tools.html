@@ -1,0 +1,42 @@
+---
+layout: page
+permalink: /tools/
+title: Tools &amp; data
+eyebrow: Open science
+lede: >-
+  Reproducible, installable Python tools for glaciological remote sensing,
+  built to be published alongside the science and reused by others.
+---
+
+<div class="grid grid-2">
+  {%- for tool in site.data.tools -%}
+  <article class="card tool">
+    <div class="tool-top">
+      <h2 class="mono">{{ tool.name }}</h2>
+      <span class="chip">{{ tool.lang }}</span>
+    </div>
+    <p>{{ tool.summary }}</p>
+    {%- if tool.repo and tool.repo != '' -%}
+    <a class="more" href="{{ tool.repo }}">View on GitHub →</a>
+    {%- endif -%}
+  </article>
+  {%- endfor -%}
+</div>
+
+<div class="note">
+  <h2>How these are built</h2>
+  <p>
+    The tools share a common engineering backbone: reproducible
+    <span class="mono">src</span>-layout packaging, pre-commit hooks,
+    <span class="mono">conda-lock</span> environments, and continuous
+    integration on GitHub Actions with micromamba. Data pipelines use
+    cloud-optimised GeoTIFF lazy reads with
+    <span class="mono">rioxarray</span> and <span class="mono">dask</span>
+    over <span class="mono">/vsicurl/</span>, so polar datasets stream
+    without full downloads.
+  </p>
+  <ul class="datachips">
+    <li>ITS_LIVE</li><li>ArcticDEM</li><li>BedMachine</li>
+    <li>ICESat-2</li><li>RACMO</li>
+  </ul>
+</div>

@@ -1,0 +1,23 @@
+---
+layout: page
+permalink: /photos/
+title: Photo Gallery
+eyebrow: 
+lede: Collection of photos from fieldwork, teaching, and training experiences. Hover over a photo to read its caption.
+---
+
+<div class="gallery">
+  {%- for photo in site.data.photos -%}
+  <figure class="photo">
+    {%- if photo.image and photo.image != '' -%}
+      <img src="{{ photo.image | relative_url }}" alt="{{ photo.caption | strip_html | truncate: 120 }}">
+    {%- else -%}
+      <div class="photo-ph">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 16l5-5 4 4 3-3 6 6"/><circle cx="9" cy="9.5" r="1.3"/></svg>
+        <span>Field photo</span>
+      </div>
+    {%- endif -%}
+    {%- if photo.caption -%}<figcaption>{{ photo.caption }}</figcaption>{%- endif -%}
+  </figure>
+  {%- endfor -%}
+</div>
