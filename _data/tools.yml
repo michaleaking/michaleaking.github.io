@@ -25,9 +25,9 @@
   featured: true
   lang: Python, Jupyter
   repo: https://github.com/michaleaking/ModelObsCompare
-  links:
-    - label: Documentation and Use
-      url: https://github.com/michaleaking/ModelObsCompare/
+  #links:
+  #  - label: Documentation and Use
+  #    url: https://github.com/michaleaking/ModelObsCompare/
   summary: >-
     moc (Model vs Observation Glacier Velocity Comparison Module) compares observed surface velocities against 
     modelled velocities from ISSM over glacier basins of interest on the Greenland Ice Sheet.

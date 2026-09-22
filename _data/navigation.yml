@@ -2,13 +2,13 @@
 # Each `url` must match the `permalink` set at the top of the matching page file.
 - title: Research
   url: /research/
-- title: Tools
-  url: /tools/
 - title: Publications
   url: /publications/
 - title: Teaching
   url: /teaching/
 - title: Team
   url: /group/
+- title: Tools
+  url: /tools/
 - title: Photos
   url: /photos/
