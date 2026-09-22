@@ -16,7 +16,7 @@ lede: >-
       {%- if tool.lang and tool.lang != '' -%}<span class="chip">{{ tool.lang }}</span>{%- endif -%}
     </div>
     <p>{{ tool.summary }}</p>
-    {%- include links.html items=tool.links repo=tool.repo -%}
+    {%- include links.html items=tool.links primary=tool.repo primary_label="View on GitHub" -%}
   </article>
   {%- endfor -%}
 </div>

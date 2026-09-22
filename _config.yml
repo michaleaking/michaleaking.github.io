@@ -33,9 +33,9 @@ author:
 #   position       which part of the photo stays in frame when cropped,
 #                  e.g. center, "center 30%", "left center".
 hero:
-  image: /assets/img/sunset_iceberg.jpg
-  opacity: 0.5
-  scrim: 0.22
+  image: /assets/img/sunset_iceberg.JPG
+  opacity: 0.4
+  scrim: 0.72
   position: center
 
 # --- Links (leave any line blank to hide that link) ----------

@@ -130,6 +130,7 @@ p{margin:0 0 1rem;} em{font-style:italic;}
 .linkrow a span{transition:transform 0.15s ease;display:inline-block;}
 .linkrow a:hover span{transform:translateX(2px);}
 .thread .linkrow{margin-top:1rem;}
+.person .linkrow{gap:0.3rem 0.9rem;margin-top:0.2rem;}
 
 .stack{display:flex;flex-direction:column;gap:2.2rem;}
 .thread{padding-bottom:2rem;border-bottom:1px solid var(--hair);}

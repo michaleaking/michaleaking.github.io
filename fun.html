@@ -1,0 +1,83 @@
+---
+layout: page
+permalink: /fun/
+title: Feathered Fun
+eyebrow: Mapping the fun stuff.
+lede: A map of bird "lifers" built with records from Cornell's eBird community science mobile apps and archival tools. Click a marker for timestamp and bonus blurry phone photography, if you're lucky. 
+---
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  #birdmap { height: 560px; width: 100%; border-radius: var(--radius); border: 1px solid var(--hair); overflow: hidden; z-index: 0; margin-bottom: 1rem; }
+  .map-note { font-family: var(--font-mono); font-size: 0.82rem; color: var(--slate); }
+  .leaflet-popup-content { font-family: var(--font-body); line-height: 1.4; }
+  .leaflet-popup-content .bird-photo { display: block; width: 100%; height: auto; border-radius: 8px; margin: 0 0 0.5rem; }
+  .leaflet-popup-content .sci { color: var(--slate); font-style: italic; }
+  .leaflet-popup-content .credit { display: block; color: var(--slate); font-size: 0.7rem; margin-top: 0.35rem; }
+  .leaflet-popup-content .key { display: block; color: var(--slate); font-family: var(--font-mono); font-size: 0.66rem; margin-top: 0.4rem; word-break: break-all; }
+  .bird-tip { padding: 0; border: none; background: none; box-shadow: none; }
+  .bird-tip img { width: 96px; height: auto; border-radius: 6px; display: block; box-shadow: 0 4px 14px rgba(16,32,46,.25); }
+  .bird-tip::before { display: none; }
+  @media (max-width: 640px) { #birdmap { height: 420px; } }
+</style>
+
+<div id="birdmap"></div>
+<p class="map-note"><span id="bird-count">…</span> Bird sightings mapped. Click a marker for details</p>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  var BASEURL = "{{ site.baseurl }}";
+  var map = L.map('birdmap', { scrollWheelZoom: false }).setView([40, -30], 2);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18, attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  Promise.all([
+    fetch('{{ "/assets/data/life_birds.geojson" | relative_url }}').then(function (r) { return r.json(); }),
+    fetch('{{ "/assets/data/bird_photos.json" | relative_url }}').then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; })
+  ]).then(function (res) {
+    var data = res[0], photos = res[1] || {};
+
+    // Sighting-specific photo (keyed by id) wins; a species-wide photo (keyed by name) is the fallback.
+    function photoFor(p) { return photos[p.id] || photos[p.common_name] || null; }
+
+    var layer = L.geoJSON(data, {
+      pointToLayer: function (feature, latlng) {
+        var p = feature.properties || {}, has = !!photoFor(p);
+        return L.circleMarker(latlng, {
+          radius: has ? 9 : 5, fillColor: '#c17825', color: '#ffffff',
+          weight: has ? 2 : 1.5, opacity: 1, fillOpacity: 0.9
+        });
+      },
+      onEachFeature: function (feature, lyr) {
+        var p = feature.properties || {}, photo = photoFor(p), html = '';
+        if (photo && photo.image) {
+          html += '<img class="bird-photo" src="' + BASEURL + esc(photo.image) + '" alt="' +
+                  esc(p.common_name || '') + '" onerror="this.style.display=\'none\'">';
+        }
+        html += '<strong>' + esc(p.common_name || 'Unknown') + '</strong>';
+        if (p.scientific_name) html += '<br><span class="sci">' + esc(p.scientific_name) + '</span>';
+        if (p.date) html += '<br>' + esc(p.date) + (p.time ? ' · ' + esc(p.time) : '');
+        if (p.location) html += '<br>' + esc(p.location);
+        if (p.checklist) html += '<br><a href="' + esc(p.checklist) + '" target="_blank" rel="noopener">eBird checklist &#8599;</a>';
+        if (photo && photo.credit) html += '<span class="credit">' + esc(photo.credit) + '</span>';
+        if (p.id) html += '<span class="key">photo key: ' + esc(p.id) + '</span>';
+        lyr.bindPopup(html, { maxWidth: 260 });
+      }
+    }).addTo(map);
+
+    var n = (data.features || []).length;
+    document.getElementById('bird-count').textContent = n;
+    if (n) { map.fitBounds(layer.getBounds().pad(0.2)); }
+  }).catch(function () {
+    document.getElementById('bird-count').textContent = '—';
+  });
+})();
+</script>

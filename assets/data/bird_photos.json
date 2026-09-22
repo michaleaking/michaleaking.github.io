@@ -1,0 +1,11 @@
+{
+  "_comment": "Photos keyed by SIGHTING id (shown in each marker's popup as 'photo key'), so a photo pins to one specific date/place. To attach a photo to a particular sighting, copy that sighting's key from its popup. A plain species name as a key also works as a fallback that applies to EVERY marker of that species.",
+  "S00000001|Black-legged Kittiwake": { "image": "/assets/img/birds/black-legged-kittiwake.jpg", "credit": "" },
+  "S00000002|Snow Bunting":           { "image": "/assets/img/birds/snow-bunting.jpg",           "credit": "MK IPhone" },
+  "S00000003|Atlantic Puffin":        { "image": "/assets/img/birds/atlantic-puffin.jpg",        "credit": "MK IPhone" },
+  "S00000005|Common Raven":           { "image": "/assets/img/birds/common-raven.jpg",           "credit": "MK IPhone" },
+  "S302201887|Yellow-throated Toucan":         { "image": "/assets/img/birds/toucan.jpg",         "credit": "LK IPhone" },
+  "S392300635|California Scrub-Jay":  { "image": "/assets/img/birds/scrub_jay.jpg",                "credit": "MK IPhone" },
+  "S001|Adelie Penguin": { "image": "/assets/img/birds/adelie.jpg", "credit": "MK IPhone" },
+  "S2000|Mute Swan": { "image": "/assets/img/birds/mute_swan.png", "credit": "MK IPhone" }
+}

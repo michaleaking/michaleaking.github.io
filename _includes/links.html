@@ -1,21 +1,27 @@
 {%- comment -%}
-  Renders a row of labelled links. Used by the Tools and Research pages.
+  Renders a row of labelled links. Used by the Team, Tools and Research pages.
 
-  Usage:  {% include links.html items=tool.links repo=tool.repo %}
+  Usage:  {% include links.html items=person.links %}
+          {% include links.html items=tool.links primary=tool.repo primary_label="View on GitHub" %}
 
-  `items` is a list of { label, url } pairs from a _data file. An entry with
-  no label falls back to its domain name, so a bare url still shows something
-  sensible; entries with a blank url are skipped. `repo` is optional shorthand
-  for a single GitHub link, rendered first — it exists so tools with just a
-  repo don't need the longer `links` form.
+  items          list of { label, url } pairs from a _data file. An entry with
+                 no label falls back to its domain name, so a bare url still
+                 shows something sensible; blank urls are skipped.
+  primary        optional single url rendered first, for the shorthand fields
+                 that predate `links` (a tool's `repo`, a person's `link`).
+  primary_label  text for that first link. Defaults to "Link".
 {%- endcomment -%}
 {%- assign items = include.items | default: empty -%}
-{%- assign has_repo = false -%}
-{%- if include.repo and include.repo != '' -%}{%- assign has_repo = true -%}{%- endif -%}
-{%- if has_repo or items.size > 0 -%}
+{%- assign has_primary = false -%}
+{%- if include.primary and include.primary != '' -%}{%- assign has_primary = true -%}{%- endif -%}
+{%- if has_primary or items.size > 0 -%}
 <ul class="linkrow">
-  {%- if has_repo -%}
-  <li><a href="{{ include.repo }}" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a></li>
+  {%- if has_primary -%}
+  <li>
+    <a href="{{ include.primary }}"{% if include.primary contains '://' %} rel="noopener"{% endif %}>
+      {{ include.primary_label | default: 'Link' }} <span aria-hidden="true">→</span>
+    </a>
+  </li>
   {%- endif -%}
   {%- for link in items -%}
     {%- if link.url and link.url != '' -%}

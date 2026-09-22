@@ -37,9 +37,7 @@ lede: >-
       {%- endfor -%}
     </ul>
     {%- endif -%}
-    {%- if person.link and person.link != '' -%}
-    <a class="more" href="{{ person.link }}">Website →</a>
-    {%- endif -%}
+    {%- include links.html items=person.links primary=person.link primary_label="Website" -%}
   </article>
   {%- endfor -%}
 </div>

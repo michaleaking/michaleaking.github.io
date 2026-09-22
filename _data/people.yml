@@ -8,7 +8,21 @@
 #   name     – displayed name
 #   role     – short role line (rendered in mono type)
 #   focus    – one-sentence research focus (optional)
-#   link     – external profile URL (optional; blank hides the link)
+#   link     – shorthand for a single link, labelled "Website".
+#              Leave blank and use `links` instead when there's more
+#              than one, or when "Website" is the wrong label.
+#   links    – any number of labelled links, each with a label and url:
+#                links:
+#                  - label: Personal site
+#                    url: https://example.com
+#                  - label: Lab website
+#                    url: https://lab.example.edu
+#                  - label: Google Scholar
+#                    url: https://scholar.google.com/citations?user=XXXX
+#              Label them however you like — "Lab website", "ORCID",
+#              "CV", "GitHub". A link with no label falls back to its
+#              domain name. `link` and `links` can be used together:
+#              `link` simply renders first.
 #   photo    – headshot path, e.g. /assets/img/headshot_2026.jpg
 #              Add the file to assets/img/ first. Square-ish crops look
 #              best; leave blank to show a neutral placeholder avatar.
@@ -23,6 +37,11 @@ group:
     role: Principal Investigator; Affiliate Faculty, UW Earth and Space Sciences
     focus: Outlet-glacier dynamics, remote sensing, subglacial hydrology
     link:
+    links:
+      - label: APL Polar Science Center
+        url: https://psc.apl.uw.edu/
+      - label: Google Scholar
+        url: https://scholar.google.com/citations?user=1PYqI-4AAAAJ
     photo: /assets/img/headshot_2026.jpg
     projects: [greenland-nisar, antarctica-discharge, green-ibis, melange-fjord, icesat2-seasonal]
 
@@ -31,7 +50,7 @@ group:
     role: Doctoral student in UW Earth and Space Sciences
     focus: ML-methods for understanding seasonality of the Northeast Greenland Ice Stream (NEGIS)
     link: https://clairecjensen.com
-    photo:
+    photo: /assets/img/team/Jensen-Claire.jpeg
     projects: [greenland-nisar]
 
   - name: Ian Joughin
@@ -58,7 +77,11 @@ group:
   - name: Tyler Sutterley
     role: PI, Senior Research Scientist, APL Polar Science Center
     focus: ICESat-2 land ice products, gravimetry, community tool building.
-    link: https://tsutterley.github.io/
+    links:
+      - label: 
+        url: https://tsutterley.github.io/
+      - label: Lab website
+        url: https://polargeodesy.github.io/
     photo: /assets/img/team/tyler_sutterley.jpeg
     projects: [antarctica-discharge]
 
@@ -66,9 +89,13 @@ group:
   # - name:
   #   role:
   #   focus:
-  #   link:
   #   photo:
   #   projects: []
+  #   links:
+  #     - label: Personal site
+  #       url:
+  #     - label: Lab website
+  #       url:
 
 # Named external collaborators are kept out by default. If you'd
 # like to list any, add them here after checking with them:
