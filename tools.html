@@ -13,12 +13,10 @@ lede: >-
   <article class="card tool">
     <div class="tool-top">
       <h2 class="mono">{{ tool.name }}</h2>
-      <span class="chip">{{ tool.lang }}</span>
+      {%- if tool.lang and tool.lang != '' -%}<span class="chip">{{ tool.lang }}</span>{%- endif -%}
     </div>
     <p>{{ tool.summary }}</p>
-    {%- if tool.repo and tool.repo != '' -%}
-    <a class="more" href="{{ tool.repo }}">View on GitHub →</a>
-    {%- endif -%}
+    {%- include links.html items=tool.links repo=tool.repo -%}
   </article>
   {%- endfor -%}
 </div>

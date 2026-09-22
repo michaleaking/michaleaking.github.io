@@ -34,8 +34,8 @@ author:
 #                  e.g. center, "center 30%", "left center".
 hero:
   image: /assets/img/sunset_iceberg.jpg
-  opacity: 0.35
-  scrim: 0.72
+  opacity: 0.5
+  scrim: 0.22
   position: center
 
 # --- Links (leave any line blank to hide that link) ----------

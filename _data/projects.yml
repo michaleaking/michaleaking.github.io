@@ -1,5 +1,16 @@
 # Research threads. Set `featured: true` to show a thread on the home page.
 # `tags` render as small labels. `data` lists the datasets each thread leans on.
+#
+# `links` adds any number of links under a thread's description on the
+# Research page — a project site, a paper, a data release, a proposal
+# abstract. Each takes a label and a url; a link with no label falls back
+# to its domain name:
+#
+#   links:
+#     - label: Project site
+#       url: https://example.org
+#     - label: NASA award
+#       url: https://example.gov/award
 
 - title: Mapping Greenland interior ice flow with NISAR
   slug: greenland-nisar
@@ -12,6 +23,9 @@
     supported by NASA Cryosphere.
   tags: [NASA,Remote sensing, Ice-sheet modelling, ISSM]
   data: [GrIMP, BedMachine, ICESat-2, NISAR]
+  links:
+    - label: NISAR mission
+      url: https://nisar.jpl.nasa.gov/
 
 - title: Antarctic Mass Balance
   slug: antarctica-discharge

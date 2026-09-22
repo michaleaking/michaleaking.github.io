@@ -121,6 +121,16 @@ p{margin:0 0 1rem;} em{font-style:italic;}
 .tool-top h3,.tool-top h2{margin:0;font-size:1.05rem;color:var(--glacier-d);}
 .chip{font-family:var(--font-mono);font-size:0.68rem;color:var(--slate);border:1px solid var(--hair);border-radius:999px;padding:0.15rem 0.6rem;white-space:nowrap;}
 
+/* Row of labelled links under a tool card or research thread.
+   Shares the .more type scale so a single link reads the same as it did
+   when it was a lone "View on GitHub" anchor. */
+.linkrow{display:flex;flex-wrap:wrap;gap:0.4rem 1.1rem;list-style:none;padding:0;margin:0.9rem 0 0;}
+.linkrow a{font-family:var(--font-mono);font-size:0.82rem;color:var(--glacier-d);text-decoration:none;}
+.linkrow a:hover{text-decoration:underline;}
+.linkrow a span{transition:transform 0.15s ease;display:inline-block;}
+.linkrow a:hover span{transform:translateX(2px);}
+.thread .linkrow{margin-top:1rem;}
+
 .stack{display:flex;flex-direction:column;gap:2.2rem;}
 .thread{padding-bottom:2rem;border-bottom:1px solid var(--hair);}
 .thread:last-child{border-bottom:none;}
