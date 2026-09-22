@@ -21,17 +21,16 @@
 #              Use this alone (no `repo`) for website-only entries.
 # ------------------------------------------------------------
 
-- name: netcdf2geotiff
+- name: ModelObsCompare
   featured: true
-  lang: Python
-  repo: https://github.com/your-github-username/netcdf2geotiff
+  lang: Python, Jupyter
+  repo: https://github.com/michaleaking/ModelObsCompare
   links:
-    - label: Documentation
-      url: https://your-github-username.github.io/netcdf2geotiff/
+    - label: Documentation and Use
+      url: https://github.com/michaleaking/ModelObsCompare/
   summary: >-
-    Command-line tool that converts NetCDF fields to GeoTIFF while preserving
-    the polar stereographic coordinate reference system (EPSG:3413), so outputs
-    drop straight into GIS and cloud-optimised workflows.
+    moc (Model vs Observation Glacier Velocity Comparison Module) compares observed surface velocities against 
+    modelled velocities from ISSM over glacier basins of interest on the Greenland Ice Sheet.
 
 - name: fluxgate-tools
   featured: true
